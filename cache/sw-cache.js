@@ -1,11 +1,11 @@
-var VERSION = 'v3';
+var VERSION = 'v4';
 
 // 缓存
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(VERSION).then(function(cache) {
       return cache.addAll([
-        './start.html',
+        './index.html',
         './static/jquery.min.js',
         './static/88.jpeg'
       ]);
